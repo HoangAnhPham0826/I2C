@@ -1,0 +1,16 @@
+[binaries]
+c     = 'riscv64-unknown-elf-gcc'
+ar    = 'riscv64-unknown-elf-gcc-ar'
+as    = 'riscv64-unknown-elf-as'
+nm    = 'riscv64-unknown-elf-gcc-nm'
+strip = 'riscv64-unknown-elf-strip'
+
+[host_machine]
+system     = 'unknown'
+cpu_family = 'riscv'
+cpu        = 'vexriscv'
+endian     = 'little'
+
+[built-in options]
+c_args      = [ '-Os', '-march=rv32i2p0_ma', '-mabi=ilp32', '-D__vexriscv_smp__', '-D__riscv_plic__', '-g3', '-no-pie', '-fomit-frame-pointer', '-Wall', '-fno-builtin', '-fno-stack-protector', '-I/home/enty/project/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio', '-I/home/enty/project/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include', '-I/home/enty/project/litex/litex/soc/software/libbase', '-I/home/enty/project/litex/litex/soc/software/include', '-I/home/enty/project/litex/litex/soc/software', '-I/home/enty/project/linux-on-litex-vexriscv/build/vc707/software/include', '-I/home/enty/project/linux-on-litex-vexriscv/build/vc707/software/include/../libc', '-I/home/enty/project/litex/litex/soc/cores/cpu/vexriscv_smp', '-fexceptions', '-Wpragmas', ]
+c_link_args = [ '-nostdlib', '-nodefaultlibs', '-Wl,--no-dynamic-linker', '-Wl,--build-id=none', '-MD', '-MP', '-Os', '-march=rv32i2p0_ma', '-mabi=ilp32', '-D__vexriscv_smp__', '-D__riscv_plic__', '-g3', '-no-pie', '-fomit-frame-pointer', '-Wall', '-fno-builtin', '-fno-stack-protector', '-I/home/enty/project/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio', '-I/home/enty/project/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include', '-I/home/enty/project/litex/litex/soc/software/libbase', '-I/home/enty/project/litex/litex/soc/software/include', '-I/home/enty/project/litex/litex/soc/software', '-I/home/enty/project/linux-on-litex-vexriscv/build/vc707/software/include', '-I/home/enty/project/linux-on-litex-vexriscv/build/vc707/software/include/../libc', '-I/home/enty/project/litex/litex/soc/cores/cpu/vexriscv_smp', '-fexceptions', '-Wpragmas', '-L/home/enty/project/linux-on-litex-vexriscv/build/vc707/software/include', ]
