@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 14 16:52:29 2025
+# Process ID: 12941
+# Current directory: /home/enty/project/linux-on-litex-vexriscv/build/vc707/gateware
+# Command line: vivado -mode batch -source vc707.tcl
+# Log file: /home/enty/project/linux-on-litex-vexriscv/build/vc707/gateware/vivado.log
+# Journal file: /home/enty/project/linux-on-litex-vexriscv/build/vc707/gateware/vivado.jou
+# Running On        :enty-vm
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803.198 MHz
+# CPU Physical cores:8
+# CPU Logical cores :8
+# Host memory       :4056 MB
+# Swap memory       :4087 MB
+# Total Virtual     :8143 MB
+# Available Virtual :6194 MB
+#-----------------------------------------------------------
+source vc707.tcl
+# create_project -force -name vc707 -part xc7vx485tffg1761-2
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1427.848 ; gain = 0.023 ; free physical = 481 ; free virtual = 5557
+# set_msg_config -id {Common 17-55} -new_severity {Warning}
+# read_verilog {/home/enty/project/linux-on-litex-vexriscv/adder.v}
+ERROR: [Common 17-69] Command failed: File '/home/enty/project/linux-on-litex-vexriscv/adder.v' does not exist
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 14 16:52:37 2025...

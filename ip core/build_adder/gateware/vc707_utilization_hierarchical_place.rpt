@@ -1,0 +1,72 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Tue Jan 14 16:56:18 2025
+| Host         : enty-vm running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_utilization -hierarchical -file vc707_utilization_hierarchical_place.rpt
+| Design       : vc707
+| Device       : xc7vx485tffg1761-2
+| Speed File   : -2
+| Design State : Fully Placed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                        Instance                                       |                                      Module                                     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| vc707                                                                                 |                                                                           (top) |       9877 |       9091 |     764 |   22 | 8340 |     20 |      4 |          4 |
+|   (vc707)                                                                             |                                                                           (top) |       3388 |       3212 |     172 |    4 | 4383 |     18 |      2 |          0 |
+|   VexRiscvLitexSmpCluster_Cc1_Iw32Is4096Iy1_Dw32Ds4096Dy1_ITs4DTs4_Ldw256_Ood_Hb1     | VexRiscvLitexSmpCluster_Cc1_Iw32Is4096Iy1_Dw32Ds4096Dy1_ITs4DTs4_Ldw256_Ood_Hb1 |       6433 |       5823 |     592 |   18 | 3957 |      2 |      2 |          4 |
+|     (VexRiscvLitexSmpCluster_Cc1_Iw32Is4096Iy1_Dw32Ds4096Dy1_ITs4DTs4_Ldw256_Ood_Hb1) | VexRiscvLitexSmpCluster_Cc1_Iw32Is4096Iy1_Dw32Ds4096Dy1_ITs4DTs4_Ldw256_Ood_Hb1 |        122 |        106 |       0 |   16 |  965 |      0 |      0 |          0 |
+|     bufferCC_4                                                                        |                                                                        BufferCC |          1 |          1 |       0 |    0 |    2 |      0 |      0 |          0 |
+|     bufferCC_5                                                                        |                                                                      BufferCC_1 |          0 |          0 |       0 |    0 |    2 |      0 |      0 |          0 |
+|     bufferCC_6                                                                        |                                                                      BufferCC_2 |          1 |          1 |       0 |    0 |    2 |      0 |      0 |          0 |
+|     clintWishboneBridge_logic_bridge                                                  |                                                                   WishboneToBmb |          0 |          0 |       0 |    0 |    1 |      0 |      0 |          0 |
+|     clint_logic                                                                       |                                                                        BmbClint |        114 |        114 |       0 |    0 |  163 |      0 |      0 |          0 |
+|     cores_0_cpu_logic_cpu                                                             |                                                                        VexRiscv |       2724 |       2680 |      44 |    0 | 2116 |      2 |      2 |          4 |
+|       (cores_0_cpu_logic_cpu)                                                         |                                                                        VexRiscv |       1234 |       1190 |      44 |    0 | 1901 |      0 |      0 |          4 |
+|       IBusCachedPlugin_cache                                                          |                                                                InstructionCache |        686 |        686 |       0 |    0 |   99 |      1 |      1 |          0 |
+|       dataCache_1                                                                     |                                                                       DataCache |        818 |        818 |       0 |    0 |  116 |      1 |      1 |          0 |
+|         (dataCache_1)                                                                 |                                                                       DataCache |        513 |        513 |       0 |    0 |  116 |      0 |      1 |          0 |
+|         ways_0_data                                                                   |                                                                      Ram_1w_1rs |        310 |        310 |       0 |    0 |    0 |      1 |      0 |          0 |
+|     customDebug_debugBridge_bmb_decoder                                               |                                                                      BmbDecoder |         14 |         14 |       0 |    0 |    9 |      0 |      0 |          0 |
+|     customDebug_debugBridge_logic_debugger                                            |                                                                  SystemDebugger |         27 |         25 |       0 |    2 |   72 |      0 |      0 |          0 |
+|     customDebug_debugBridge_logic_jtagBridge                                          |                                                                 JtagBridgeNoTap |          3 |          3 |       0 |    0 |    6 |      0 |      0 |          0 |
+|       flowCCUnsafeByToggle_1                                                          |                                                            FlowCCUnsafeByToggle |          3 |          3 |       0 |    0 |    6 |      0 |      0 |          0 |
+|         (flowCCUnsafeByToggle_1)                                                      |                                                            FlowCCUnsafeByToggle |          2 |          2 |       0 |    0 |    4 |      0 |      0 |          0 |
+|         inputArea_target_buffercc                                                     |                                                                      BufferCC_3 |          1 |          1 |       0 |    0 |    2 |      0 |      0 |          0 |
+|     dBridge_logic                                                                     |                                                                 BmbToLiteDram_1 |        922 |        550 |     372 |    0 |  387 |      0 |      0 |          0 |
+|       (dBridge_logic)                                                                 |                                                                 BmbToLiteDram_1 |         29 |         29 |       0 |    0 |   40 |      0 |      0 |          0 |
+|       cmdContext_fifo                                                                 |                                                                      StreamFifo |         34 |         26 |       8 |    0 |   29 |      0 |      0 |          0 |
+|       dBridge_logic_io_input_upSizer_io_output_unburstify                             |                                                                   BmbUnburstify |         49 |         49 |       0 |    0 |   34 |      0 |      0 |          0 |
+|       io_input_upSizer                                                                |                                                                BmbUpSizerBridge |        307 |        307 |       0 |    0 |  260 |      0 |      0 |          0 |
+|       io_output_rdata_fifo                                                            |                                                        StreamFifoLowLatency_2_0 |        291 |        119 |     172 |    0 |   12 |      0 |      0 |          0 |
+|         fifo                                                                          |                                                                  StreamFifo_4_1 |        291 |        119 |     172 |    0 |   12 |      0 |      0 |          0 |
+|       streamFifoLowLatency_3                                                          |                                                            StreamFifoLowLatency |        214 |         22 |     192 |    0 |   12 |      0 |      0 |          0 |
+|         fifo                                                                          |                                                                    StreamFifo_3 |        214 |         22 |     192 |    0 |   12 |      0 |      0 |          0 |
+|     dBusNonCoherent_bmb_decoder                                                       |                                                                    BmbDecoder_1 |         20 |         20 |       0 |    0 |    9 |      0 |      0 |          0 |
+|     iArbiter_bmb_decoder                                                              |                                                                    BmbDecoder_2 |         14 |         14 |       0 |    0 |    9 |      0 |      0 |          0 |
+|     iBridge_logic                                                                     |                                                                   BmbToLiteDram |        377 |        201 |     176 |    0 |   96 |      0 |      0 |          0 |
+|       (iBridge_logic)                                                                 |                                                                   BmbToLiteDram |         19 |         19 |       0 |    0 |   31 |      0 |      0 |          0 |
+|       cmdContext_fifo                                                                 |                                                                    StreamFifo_1 |         21 |         17 |       4 |    0 |   23 |      0 |      0 |          0 |
+|       iBridge_logic_io_input_upSizer_io_output_unburstify                             |                                                                 BmbUnburstify_1 |         54 |         54 |       0 |    0 |   26 |      0 |      0 |          0 |
+|       io_input_upSizer                                                                |                                                              BmbUpSizerBridge_1 |          6 |          6 |       0 |    0 |    4 |      0 |      0 |          0 |
+|       io_output_rdata_fifo                                                            |                                                          StreamFifoLowLatency_2 |        278 |        106 |     172 |    0 |   12 |      0 |      0 |          0 |
+|         fifo                                                                          |                                                                    StreamFifo_4 |        278 |        106 |     172 |    0 |   12 |      0 |      0 |          0 |
+|     peripheralBridge_bmb_arbiter                                                      |                                                                      BmbArbiter |         39 |         39 |       0 |    0 |    3 |      0 |      0 |          0 |
+|       memory_arbiter                                                                  |                                                                   StreamArbiter |         39 |         39 |       0 |    0 |    3 |      0 |      0 |          0 |
+|     peripheralBridge_logic                                                            |                                                                   BmbToWishbone |       2051 |       2051 |       0 |    0 |  114 |      0 |      0 |          0 |
+|     plicWishboneBridge_logic_bridge                                                   |                                                                 WishboneToBmb_1 |         16 |         16 |       0 |    0 |    1 |      0 |      0 |          0 |
+|   adder                                                                               |                                                                           adder |         72 |         72 |       0 |    0 |    0 |      0 |      0 |          0 |
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
